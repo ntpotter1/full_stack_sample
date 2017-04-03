@@ -35,3 +35,5 @@ While the application is running:
 * Property search, property detail, Google map mashup, or anything you can imagine.
 * These are just a small build blocks to get you started quickly.
 * Your Ten-X team guru will hack with you side by side.  Don't be shy ask them questions.
+
+test
