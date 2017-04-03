@@ -3,9 +3,11 @@ var http = require('http')
 var mongoose = require('mongoose')
 var bodyParser = require('body-parser')
 
-
 mongoose.connect(process.env.MONGODB)
-mongoose.connection.on('error', console.error.bind(console))
+mongoose.connection.on('error', (err) => {
+  console.error(err)
+  setTimeout(() => mongoose.connect(process.env.MONGODB), 5000)
+})
 
 var Properties = mongoose.model('properties', mongoose.Schema({
   full_address: 'String',
