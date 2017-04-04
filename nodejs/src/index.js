@@ -35,12 +35,12 @@ app.get('/', function (req, res) {
         <script src="/public/app.js"></script>
       </head>
       <body>
-        <div>Hello World!</div>
-        <a href="/public/page2.html">One more page</a>
-        <h1>Java API Call</h1>
-        <pre class="box" id="java_data"></pre>
-        <h1>NodeJS API Call</h1>
-        <pre class="box" id="node_data"></pre>
+
+        <form NAME="myform" ACTION="" METHOD="GET">
+        Search: <BR>
+        <input TYPE="text" NAME="inputbox" VALUE=""><P>
+        <input TYPE="button" NAME="button" Value="Click" onClick="getProperties(this.form.inputbox.value)">
+        </form>
       </body>
     </html>
   `)
