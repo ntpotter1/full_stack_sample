@@ -35,11 +35,10 @@ app.get('/', function (req, res) {
         <script src="/public/app.js"></script>
       </head>
       <body>
-
-        <form NAME="myform" ACTION="" METHOD="GET">
-        Search: <BR>
-        <input TYPE="text" NAME="inputbox" VALUE=""><P>
-        <input TYPE="button" NAME="button" Value="Click" onClick="getProperties(this.form.inputbox.value)">
+      <form name="query" action="" method="GET">
+        <label for="query"> Search: </label>
+        <input type="text" name="query">
+        <input type="button" name="search" Value="Search" onClick="getProperties(this.form.inputbox.value)">
         </form>
       </body>
     </html>
