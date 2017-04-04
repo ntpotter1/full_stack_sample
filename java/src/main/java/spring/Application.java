@@ -20,7 +20,7 @@ public class Application {
     @RequestMapping("/api/properties/{propertyId}")
     public PropertyEntity property(@PathVariable("propertyId") String propertyId) {
       PropertyEntity temp = repository.findOne(propertyId);
-      System.out.println(temp.getFullAddress());
+      System.out.println(temp);
       
       return temp;
       // return "Java Spring Sample Response 2";

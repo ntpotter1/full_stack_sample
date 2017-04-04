@@ -38,8 +38,14 @@ app.get('/', function (req, res) {
       <form name="query" action="" method="GET">
         <label for="query"> Search: </label>
         <input type="text" name="query">
-        <input type="button" name="search" Value="Search" onClick="getProperties(this.form.inputbox.value)">
+        <input type="button" name="search" Value="Search" onClick="getProperties(this.form.query.value)">
         </form>
+
+        <div class='results'>
+          <h1 id='name'></h1>
+          <p id='info'></p>
+          <p id='yearBuilt'></p>
+        </div>
       </body>
     </html>
   `)
